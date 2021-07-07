@@ -30,11 +30,11 @@
         <hr class="bg-success pb-1 mb-2">
         <p>Ingresa tus datos</p>
 
-        <form id="myform" method="POST">
+        <form id="myform" name="myform" method="POST">
             <div class="row form-group mt-3">
                 <label for="nombre" class="col-form-label col-md-4">Id:</label>
                 <div class="col-md-8">
-                    <input type="text" name="id_pa" id="id_pa" class="form-control" readonly="true">
+                    <input type="hidden" name="id_pa" id="id_pa" class="form-control" readonly="true">
                 </div>
             </div>
             <div class="row form-group mt-3">

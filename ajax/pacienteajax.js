@@ -64,6 +64,7 @@ $(document).ready(function () {
             success: function (response) {
                 alert("Registrado");
                 mostrar();
+                vaciar();
 
             }
         });
@@ -84,6 +85,7 @@ $(document).ready(function () {
             success: function (response) {
                 alert("Modificado");
                 mostrar();
+                vaciar();
             }
         });
         return false;
@@ -103,10 +105,14 @@ $(document).ready(function () {
             success: function (response) {
                 alert("Eliminado");
                 mostrar();
+                vaciar();
             }
         });
         return false;
     });
-
+    function vaciar()
+    {
+        document.myform.reset();
+    }
 
 });
